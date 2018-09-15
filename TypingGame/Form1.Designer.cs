@@ -44,9 +44,9 @@
             // listBox1
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 135;
+            this.listBox1.ItemHeight = 69;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
@@ -55,6 +55,7 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 800;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -109,6 +110,7 @@
             // 
             // difficultyProgressBar
             // 
+            this.difficultyProgressBar.Maximum = 701;
             this.difficultyProgressBar.Name = "difficultyProgressBar";
             this.difficultyProgressBar.Size = new System.Drawing.Size(100, 19);
             // 
@@ -120,10 +122,12 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.listBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
