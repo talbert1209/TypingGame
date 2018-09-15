@@ -53,6 +53,11 @@
             this.listBox1.Size = new System.Drawing.Size(854, 123);
             this.listBox1.TabIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 800;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
