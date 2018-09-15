@@ -21,6 +21,7 @@
             }
 
             Accuracy = 100 * Correct / (Missed + Correct);
+
         }
     }
 }
